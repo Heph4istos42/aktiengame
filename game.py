@@ -11,9 +11,6 @@ DEBUG = True
 # instantiate the app
 app = Flask(__name__)
 app.config.from_object(__name__)
-host = '127.0.0.1'
-port = 5001
-
 # enable CORS , resources={r'/*': {'origins': '*'}}
 CORS(app)
 
@@ -139,4 +136,4 @@ def cleanup(session):
     engine_container.dispose()
       
 if __name__ == '__main__':
-    app.run(host, port)
+    app.run()
