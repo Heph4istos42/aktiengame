@@ -1,0 +1,1 @@
+web: gunicorn msg-service:app
