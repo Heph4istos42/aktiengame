@@ -1,1 +1,1 @@
-web: gunicorn msg-service:app
+web: gunicorn game:app
